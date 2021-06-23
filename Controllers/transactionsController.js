@@ -15,8 +15,8 @@ transactionsController.get("/:index", (req, res) => {
 
 // Create
 transactionsController.post("/", (req, res) => {
-    transactionsArr.push(req.body)
-    res.json(transactionsArr[transactionsArr.length - 1])
+    transactionsArr.unshift(req.body)
+    res.json(transactionsArr[0])
 })
 
 // Delete

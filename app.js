@@ -12,7 +12,7 @@ app.use(cors());
 app.use("/transactions", transactionsController)
 // Routes
 app.get("/", (req, res) => {
-  res.send("Welcome to Myra's budgeting app! Nothing to see here...");
+  res.send("Ivan's Budgeting API. \nWe control what you see. \nWe control what you hear.");
 });
 
 app.get("*", (req, res) => {
